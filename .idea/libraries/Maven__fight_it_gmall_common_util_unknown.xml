@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fight.it.gmall:common-util:unknown">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../RepMaven2020/fight/it/gmall/common-util/unknown/common-util-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../RepMaven2020/fight/it/gmall/common-util/unknown/common-util-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../RepMaven2020/fight/it/gmall/common-util/unknown/common-util-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
