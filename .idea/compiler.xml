@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -29,7 +28,7 @@
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
       <module name="common-util" target="1.8" />
-      <module name="electronicbusiness_online" target="1.8" />
+      <module name="electronicbusinessOnline" target="1.8" />
       <module name="model" target="1.8" />
       <module name="server-gateway" target="1.8" />
       <module name="service" target="1.8" />
@@ -51,11 +50,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="common" options="-parameters" />
       <module name="common-util" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="server-gateway" options="-parameters" />
-      <module name="service" options="-parameters" />
       <module name="service-activity" options="-parameters" />
       <module name="service-cart" options="-parameters" />
       <module name="service-client" options="-parameters" />

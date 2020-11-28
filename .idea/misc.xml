@@ -6,7 +6,23 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/model/pom.xml" />
+        <option value="$PROJECT_DIR$/server-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-activity/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-item/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-list/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-mq/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-order/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-payment/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-product/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-task/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-test/pom.xml" />
+        <option value="$PROJECT_DIR$/service-client/pom.xml" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
       </list>
     </option>
   </component>

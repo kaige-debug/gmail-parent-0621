@@ -16,6 +16,7 @@
         <dependency>
             <groupId>fight.it.gmall</groupId>
             <artifactId>common-util</artifactId>
+            <version>1.0</version>
         </dependency>
 
     </dependencies>
