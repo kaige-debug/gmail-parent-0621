@@ -8,7 +8,6 @@ import fight.it.gmall.product.mapper.SkuSaleAttrValueMapper;
 import fight.it.gmall.product.service.SkuService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import fight.it.gmall.product.service.SkuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

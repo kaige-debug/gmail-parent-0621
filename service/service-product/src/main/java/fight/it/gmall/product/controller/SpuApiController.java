@@ -1,13 +1,10 @@
 package fight.it.gmall.product.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.api.R;
 import fight.it.gmall.common.result.Result;
-import fight.it.gmall.model.product.BaseAttrValue;
 import fight.it.gmall.model.product.BaseSaleAttr;
 import fight.it.gmall.model.product.BaseTrademark;
 import fight.it.gmall.model.product.SpuInfo;
-import fight.it.gmall.product.service.BaseAttrInfoService;
 import fight.it.gmall.product.service.BaseSaleAttrService;
 import fight.it.gmall.product.service.BaseTrademarkService;
 import fight.it.gmall.product.service.SpuService;

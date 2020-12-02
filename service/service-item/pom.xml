@@ -11,6 +11,12 @@
 
     <groupId>fight.it.gmall</groupId>
     <artifactId>service-item</artifactId>
-
+    <dependencies>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-product-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>

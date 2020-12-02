@@ -11,6 +11,19 @@
 
     <groupId>fight.it.gmall</groupId>
     <artifactId>service-client</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>service-item-client</module>
+        <module>service-product-client</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>common-util</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>

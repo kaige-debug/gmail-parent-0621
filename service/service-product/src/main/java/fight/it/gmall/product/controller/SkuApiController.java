@@ -1,7 +1,6 @@
 package fight.it.gmall.product.controller;
 
 import fight.it.gmall.common.result.Result;
-import fight.it.gmall.model.product.*;
 import fight.it.gmall.product.service.SkuService;
 import fight.it.gmall.product.service.SpuService;
 import com.baomidou.mybatisplus.core.metadata.IPage;

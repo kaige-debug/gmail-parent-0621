@@ -11,6 +11,10 @@
 
     <groupId>fight.it.gmall</groupId>
     <artifactId>web</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>web-all</module>
+    </modules>
 
     <dependencies>
         <dependency>

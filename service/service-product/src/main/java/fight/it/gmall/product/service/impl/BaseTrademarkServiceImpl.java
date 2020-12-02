@@ -1,6 +1,5 @@
 package fight.it.gmall.product.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import fight.it.gmall.model.product.BaseTrademark;
