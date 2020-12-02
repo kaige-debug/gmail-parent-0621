@@ -4,6 +4,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.util.Map;
+
 /**
  * 全局统一返回结果类 {数据查询}
  *
@@ -20,6 +22,8 @@ public class Result<T> {
 
     @ApiModelProperty(value = "返回数据")
     private T data;
+
+
 
     public Integer getCode() {
         return code;
@@ -61,10 +65,20 @@ public class Result<T> {
         result.setMessage(resultCodeEnum.getMessage());
         return result;
     }
-
+//    public static <T> Result<T> build(Map<String,String> map, ResultCodeEnum resultCodeEnum) {
+//        Result<T> result = build(map);
+//        result.setCode(resultCodeEnum.getCode());
+//        result.setMessage(resultCodeEnum.getMessage());
+//        return result;
+//    }
     public static<T> Result<T> ok(){
         return Result.ok(null);
     }
+
+//    public static<T> Result<T> ok(Map<String ,Object> map) {
+//        Result result =build(map);
+//        return build(map,ResultCodeEnum.SUCCESS);
+//    }
 
     /**
      * 操作成功

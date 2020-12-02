@@ -32,11 +32,11 @@
             <version>1.0</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>fight.it.gmall</groupId>-->
-<!--            <artifactId>model</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0</version>
+        </dependency>
 
     </dependencies>
 
