@@ -20,12 +20,16 @@ public class ItemController {
     ItemFeignClient itemFeignClient;
 
     @RequestMapping("{skuId}.html")
-    public String item(@PathVariable("skuId") long skuId, Model model) {
+    public String item(@PathVariable("skuId") Long skuId, Model model) {
        Map<String,Object> map = new HashMap<>();
        map = itemFeignClient.getItem(skuId);
        model.addAllAttributes(map);
-        return "item/index";
+       return "item/index";
     }
-
+//    @RequestMapping("/")
+//    public String index(){
+//
+//        return "index";
+//    }
 
 }

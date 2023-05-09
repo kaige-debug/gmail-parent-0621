@@ -1,6 +1,7 @@
 package fight.it.gmall.product.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import fight.it.gmall.model.list.SearchAttr;
 import fight.it.gmall.model.product.BaseAttrInfo;
 import fight.it.gmall.model.product.BaseAttrValue;
 import fight.it.gmall.product.mapper.BaseAttrInfoMapper;
@@ -56,5 +57,11 @@ public class BaseAttrInfoServiceImpl implements BaseAttrInfoService {
             baseAttrValueMapper.insert(baseAttrValue);
         }
 
+    }
+
+    @Override
+    public List<SearchAttr> getSearchAttrList(Long skuId) {
+        List<SearchAttr> searchAttrList=  baseAttrInfoMapper.selectSearchAttrList(skuId);
+        return searchAttrList;
     }
 }

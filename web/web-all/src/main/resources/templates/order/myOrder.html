@@ -6,10 +6,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 		<title>我的订单</title>
-		<link rel="icon" href="../../static/img/favicon.ico">
+		<link rel="icon" href="./img/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="/static/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/pages-myOrder.css" />
+    <link rel="stylesheet" type="text/css" href="/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pages-myOrder.css" />
 
 		<div th:include="common/head :: head"></div>
 </head>
@@ -107,7 +107,7 @@
 														<th colspan="5">
 															<span class="ordertitle">
 																{{order.createTime}}　订单编号：{{order.id}}  订单金额：{{order.totalAmount}}
-																<span class="pull-right delete"><img src="../../static/img/delete.png"/></span>
+																<span class="pull-right delete"><img src="./img/delete.png"/></span>
 															</span>
 														</th>
 													</tr>
@@ -204,7 +204,7 @@
 								<li class="yui3-u-1-4">
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="../../static/img/_/itemlike01.png" />
+											<img src="./img/_/itemlike01.png" />
 										</div>
 										<div class="attr">
 											<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
@@ -223,7 +223,7 @@
 								<li class="yui3-u-1-4">
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="../../static/img/_/itemlike02.png" />
+											<img src="./img/_/itemlike02.png" />
 										</div>
 										<div class="attr">
 											<em>Apple苹果iPhone 6s/6s Plus 16G 64G 128G</em>
@@ -242,7 +242,7 @@
 								<li class="yui3-u-1-4">
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="../../static/img/_/itemlike03.png" />
+											<img src="./img/_/itemlike03.png" />
 										</div>
 										<div class="attr">
 											<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
@@ -261,7 +261,7 @@
 								<li class="yui3-u-1-4">
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="../../static/img/_/itemlike04.png" />
+											<img src="./img/_/itemlike04.png" />
 										</div>
 										<div class="attr">
 											<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
@@ -394,7 +394,7 @@
 					</div>
 					<div class="yui3-u-1-6">
 						<h4>帮助中心</h4>
-						<img src="../../static/img/wx_cz.jpg">
+						<img src="./img/wx_cz.jpg">
 					</div>
 				</div>
 			</div>
@@ -418,7 +418,7 @@
 	</div>
 </div>
 <!--页面底部END-->
-<script src="/static/js/api/trade.js"></script>
+<script src="/js/api/trade.js"></script>
 <script th:inline="javascript">
 	var item = new Vue({
 		el: '#item',

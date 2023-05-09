@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.lucene:lucene-queries:7.7.2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../RepMaven2020/org/apache/lucene/lucene-queries/7.7.2/lucene-queries-7.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellijIDea/ElectronicBusiness/RepMaven2020/org/apache/lucene/lucene-queries/7.7.2/lucene-queries-7.7.2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../RepMaven2020/org/apache/lucene/lucene-queries/7.7.2/lucene-queries-7.7.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellijIDea/ElectronicBusiness/RepMaven2020/org/apache/lucene/lucene-queries/7.7.2/lucene-queries-7.7.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../RepMaven2020/org/apache/lucene/lucene-queries/7.7.2/lucene-queries-7.7.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellijIDea/ElectronicBusiness/RepMaven2020/org/apache/lucene/lucene-queries/7.7.2/lucene-queries-7.7.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

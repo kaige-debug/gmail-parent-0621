@@ -15,7 +15,9 @@ import fight.it.gmall.product.service.SpuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @Service
@@ -40,8 +42,9 @@ public class SpuServiceImpl implements SpuService {
 
     @Override
     public void saveSpuInfo(SpuInfo spuInfo) {
-        Long spuInfoId = spuInfo.getId();
+
         spuMapper.insert(spuInfo);
+        Long spuInfoId = spuInfo.getId();
         List<SpuImage> spuImageList = spuInfo.getSpuImageList();
         if(null!=spuImageList){
             for (SpuImage spuImage : spuImageList) {
@@ -65,11 +68,10 @@ public class SpuServiceImpl implements SpuService {
                         spuSaleAttrValueMapper.insert(spuSaleAttrValue);
                     }
                 }
-
             }
-
         }
     }
+
     @Override
     public List<SpuSaleAttr> spuSaleAttrList(Long spuId) {
         QueryWrapper<SpuSaleAttr> queryWrapperSaleAttr = new QueryWrapper<>();
@@ -84,8 +86,15 @@ public class SpuServiceImpl implements SpuService {
             List<SpuSaleAttrValue> spuSaleAttrValues = spuSaleAttrValueMapper.selectList(queryWrapperSaleAttrValue);
             spuSaleAttr.setSpuSaleAttrValueList(spuSaleAttrValues);
         }
-
         return spuSaleAttrs;
+    }
+
+
+
+    @Override
+    public List<SpuSaleAttr> getSpuSaleAttrList(Long spuId,Long skuId) {
+        List<SpuSaleAttr>  SpuSaleAttrList = spuSaleAttrMapper.selectSaleAttrListBySpu(spuId,skuId);
+        return SpuSaleAttrList;
     }
 
     @Override
@@ -98,4 +107,18 @@ public class SpuServiceImpl implements SpuService {
 
         return spuImages;
     }
+
+    @Override
+    public Map<String,Long> getSaleAttrValuesBySpuId(Long spuId) {
+        Map<String,Long> jsonMap =new HashMap<>();
+       List<Map> mapList= spuSaleAttrMapper.selectSaleAttrValuesBySpuId(spuId);
+        for (Map map : mapList) {
+            String k = (String)map.get("value_Ids");
+            Long v =(Long) map.get("sku_id");
+            jsonMap.put(k,v);
+        }
+       
+       return jsonMap;
+    }
+
 }

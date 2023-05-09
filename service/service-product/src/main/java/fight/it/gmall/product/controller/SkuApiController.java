@@ -24,7 +24,7 @@ public class SkuApiController {
     @Autowired
     SpuService spuService;
 
-    @RequestMapping("cancelSale/{skuId}")
+    @PostMapping("cancelSale/{skuId}")
     public Result cancelSale(@PathVariable("skuId") Long skuId){
 
         skuService.cancelSale(skuId);
@@ -32,7 +32,7 @@ public class SkuApiController {
         return Result.ok();
     }
 
-    @RequestMapping("onSale/{skuId}")
+    @PostMapping("onSale/{skuId}")
     public Result onSale(@PathVariable("skuId") Long skuId){
 
         skuService.onSale(skuId);
@@ -41,7 +41,7 @@ public class SkuApiController {
     }
 
 
-    @RequestMapping("list/{pageNo}/{size}")
+    @GetMapping("list/{pageNo}/{size}")
     public Result skuList(@PathVariable("pageNo") Long pageNo ,@PathVariable("size") Long size){
 
         IPage<SkuInfo> page = new Page<>();
@@ -54,7 +54,7 @@ public class SkuApiController {
     }
 
 
-    @RequestMapping("saveSkuInfo")
+    @PutMapping("saveSkuInfo")
     public Result saveSkuInfo(@RequestBody SkuInfo skuInfo){
 
         skuService.saveSkuInfo(skuInfo);
@@ -63,7 +63,7 @@ public class SkuApiController {
     }
 
 
-    @RequestMapping("spuSaleAttrList/{spuId}")
+    @GetMapping("spuSaleAttrList/{spuId}")
     public Result spuSaleAttrList(@PathVariable("spuId") Long spuId){
 
         List<SpuSaleAttr> spuSaleAttrs =  spuService.spuSaleAttrList(spuId);
@@ -72,7 +72,7 @@ public class SkuApiController {
     }
 
 
-    @RequestMapping("spuImageList/{spuId}")
+    @GetMapping("spuImageList/{spuId}")
     public Result spuImageList(@PathVariable("spuId") Long spuId){
 
         List<SpuImage> spuImages =  spuService.spuImageList(spuId);

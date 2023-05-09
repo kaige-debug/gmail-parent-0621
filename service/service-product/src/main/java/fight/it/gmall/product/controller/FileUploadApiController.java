@@ -42,7 +42,7 @@ public class FileUploadApiController {
 //        System.out.println(url);
 //
 //        return Result.ok(url);
-        String url = "http://192.168.200.129:8080";
+        String url = "http://192.168.200.129:80";
 
         String path = FileUploadApiController.class.getClassLoader().getResource("tracker.conf").getPath();
 

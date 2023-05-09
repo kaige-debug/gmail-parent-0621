@@ -12,5 +12,23 @@
     <groupId>fight.it.gmall</groupId>
     <artifactId>service-payment</artifactId>
 
+    <dependencies>
+        <!--导入支付宝支付sdk-->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.8.73.ALL</version>
+        </dependency>
 
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-order-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>rabbitmq-util</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 </project>

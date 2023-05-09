@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<title>尚品汇 结算页</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/pages-getOrderInfo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pages-getOrderInfo.css" />
 	<div th:include="common/head :: head"></div>
 </head>
 
@@ -91,7 +91,7 @@
 									<span>商品清单：</span>
 									<ul class="yui3-g"  v-for="item in data.detailArrayList" :key="item.id">
 										<li class="yui3-u-1-6">
-											<span><img src="../../static/img/goods.png"/></span>
+											<span><img src="./img/goods.png"/></span>
 										</li>
 										<li class="yui3-u-7-12">
 											<div class="desc">{{item.skuName}}</div>
@@ -275,7 +275,7 @@
 					</div>
 					<div class="yui3-u-1-6">
 						<h4>帮助中心</h4>
-						<img src="../../static/img/wx_cz.jpg">
+						<img src="./img/wx_cz.jpg">
 					</div>
 				</div>
 			</div>
@@ -300,7 +300,7 @@
 </div>
 <!--页面底部END-->
 <!--页面底部END-->
-<script src="/static/js/api/trade.js"></script>
+<script src="/js/api/trade.js"></script>
 <script th:inline="javascript">
 	var item = new Vue({
 		el: '#item',

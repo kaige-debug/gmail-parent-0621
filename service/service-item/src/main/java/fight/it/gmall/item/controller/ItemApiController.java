@@ -13,7 +13,7 @@ public class ItemApiController {
     @Autowired
     ItemService itemService;
     @RequestMapping("getItem/{skuId}")
-    public Map<String,Object> getItem(@PathVariable("skuId") Long skuId){
+      public  Map<String,Object> getItem(@PathVariable("skuId") Long skuId){
        Map<String,Object> map =itemService.getItem(skuId);
         return map;
     }

@@ -12,5 +12,11 @@
     <groupId>fight.it.gmall</groupId>
     <artifactId>service-mq</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>rabbitmq-util</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 </project>

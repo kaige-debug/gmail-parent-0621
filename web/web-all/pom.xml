@@ -11,13 +11,49 @@
 
     <groupId>fight.it.gmall</groupId>
     <artifactId>web-all</artifactId>
-
+    <packaging>war</packaging>
     <dependencies>
 
         <dependency>
             <groupId>fight.it.gmall</groupId>
             <artifactId>service-item-client</artifactId>
             <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-list-client</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-cart-client</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-order-client</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-user-client</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-seckill-client</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

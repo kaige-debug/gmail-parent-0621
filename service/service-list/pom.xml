@@ -11,6 +11,17 @@
 
     <groupId>fight.it.gmall</groupId>
     <artifactId>service-list</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>fight.it.gmall</groupId>
+            <artifactId>service-product-client</artifactId>
+            <version>1.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

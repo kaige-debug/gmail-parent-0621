@@ -6,11 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 		<title>订单提交成功</title>
-		<link rel="icon" href="/static/img/favicon.ico">
+		<link rel="icon" href="/img/favicon.ico">
 
 
-    <link rel="stylesheet" type="text/css" href="/static/css/all.css" />
-		<link rel="stylesheet" type="text/css" href="/static/css/pages-pay.css" />
+    <link rel="stylesheet" type="text/css" href="/css/all.css" />
+		<link rel="stylesheet" type="text/css" href="/css/pages-pay.css" />
 		<div th:include="common/head :: head"></div>
 	</head>
 
@@ -56,8 +56,8 @@
 			</div>
 			<div class="step-cont">
 				<ul class="payType">
-					<a :href="'http://api.gmall.com/api/payment/alipay/submit/'+data.id" target="_blank"><li><img src="../../static/img/_/pay1.jpg"></li></a>
-					<a :href="'http://payment.gmall.com/weixin.html?orderId='+data.id" target="_blank"><li><img src="../../static/img/_/pay3.jpg"></li></a>
+					<a :href="'http://api.gmall.com/api/payment/alipay/submit/'+data.id" target="_blank"><li><img src="./img/_/pay1.jpg"></li></a>
+					<a :href="'http://payment.gmall.com/weixin.html?orderId='+data.id" target="_blank"><li><img src="./img/_/pay3.jpg"></li></a>
 				</ul>
 
 			</div>
@@ -70,19 +70,19 @@
 				</div>
 				<div class="step-cont">
 					<ul class="payType">
-						<li><img src="../../static/img/_/pay10.jpg"></li>
-						<li><img src="../../static/img/_/pay11.jpg"></li>
-						<li><img src="../../static/img/_/pay12.jpg"></li>
-						<li><img src="../../static/img/_/pay13.jpg"></li>
-						<li><img src="../../static/img/_/pay14.jpg"></li>
-						<li><img src="../../static/img/_/pay15.jpg"></li>
-						<li><img src="../../static/img/_/pay16.jpg"></li>
-						<li><img src="../../static/img/_/pay17.jpg"></li>
-						<li><img src="../../static/img/_/pay18.jpg"></li>
-						<li><img src="../../static/img/_/pay19.jpg"></li>
-						<li><img src="../../static/img/_/pay20.jpg"></li>
-						<li><img src="../../static/img/_/pay21.jpg"></li>
-						<li><img src="../../static/img/_/pay22.jpg"></li>
+						<li><img src="./img/_/pay10.jpg"></li>
+						<li><img src="./img/_/pay11.jpg"></li>
+						<li><img src="./img/_/pay12.jpg"></li>
+						<li><img src="./img/_/pay13.jpg"></li>
+						<li><img src="./img/_/pay14.jpg"></li>
+						<li><img src="./img/_/pay15.jpg"></li>
+						<li><img src="./img/_/pay16.jpg"></li>
+						<li><img src="./img/_/pay17.jpg"></li>
+						<li><img src="./img/_/pay18.jpg"></li>
+						<li><img src="./img/_/pay19.jpg"></li>
+						<li><img src="./img/_/pay20.jpg"></li>
+						<li><img src="./img/_/pay21.jpg"></li>
+						<li><img src="./img/_/pay22.jpg"></li>
 
 					</ul>
 				</div>
@@ -214,7 +214,7 @@
 					</div>
 					<div class="yui3-u-1-6">
 						<h4>帮助中心</h4>
-						<img src="../../static/img/wx_cz.jpg">
+						<img src="./img/wx_cz.jpg">
 					</div>
 				</div>
 			</div>
@@ -239,7 +239,7 @@
 </div>
 <!--页面底部END-->
 <!--页面底部END-->
-<script src="/static/js/api/trade.js"></script>
+<script src="/js/api/trade.js"></script>
 <script th:inline="javascript">
 	var item = new Vue({
 		el: '#item',

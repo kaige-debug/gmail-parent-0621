@@ -1,5 +1,6 @@
 package fight.it.gmall.product.service;
 
+import fight.it.gmall.model.list.SearchAttr;
 import fight.it.gmall.model.product.BaseAttrInfo;
 import fight.it.gmall.model.product.BaseAttrValue;
 import org.apache.ibatis.annotations.Mapper;
@@ -12,4 +13,6 @@ public interface BaseAttrInfoService {
     List<BaseAttrValue> getAttrValueList(String attrId);
 
     void saveAttrInfo(BaseAttrInfo baseAttrInfo);
+
+    List<SearchAttr> getSearchAttrList(Long skuId);
 }
